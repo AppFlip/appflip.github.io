@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flip — Calculateur de marge de revente</title>
+<style>
+  :root{
+    --bg:#101216; --surface:#1a1d24; --line:#2c313b;
+    --accent:#c9a227; --gain:#4f9d80; --text:#eeece6; --muted:#8b8f99;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:680px;margin:0 auto;padding:64px 22px 80px}
+  .badge{width:96px;height:96px;border-radius:50%;background:var(--accent);
+    display:flex;align-items:center;justify-content:center;font-size:46px;margin:0 auto 24px}
+  h1{font-size:44px;font-weight:800;text-align:center;margin:0 0 6px;letter-spacing:.5px}
+  .tagline{text-align:center;color:var(--muted);font-size:17px;margin:0 0 40px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:18px;
+    padding:22px 24px;margin:18px 0}
+  .card h2{color:var(--accent);font-size:18px;margin:0 0 8px}
+  .card p{margin:0;color:var(--muted)}
+  .links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:36px}
+  a.btn{display:inline-block;padding:12px 20px;border-radius:12px;text-decoration:none;
+    font-weight:600;background:var(--accent);color:#101216}
+  a.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:48px}
+  footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="badge">🧾</div>
+    <h1>Flip</h1>
+    <p class="tagline">Votre marge de revente, au centime près.</p>
+
+    <div class="card">
+      <h2>Le concept</h2>
+      <p>Flip calcule instantanément la marge nette d'une revente après frais
+      (commission plateforme, frais de paiement, frais de port), pour LeBonCoin,
+      Vinted, Chrono24, Backmarket, eBay et Vestiaire Collective. Collez le lien
+      d'une annonce et l'app remplit les champs pour vous.</p>
+    </div>
+
+    <div class="card">
+      <h2>Confidentialité</h2>
+      <p>Aucun compte, aucune donnée personnelle envoyée : vos deals restent sur
+      votre appareil. Consultez la politique complète ci-dessous.</p>
+    </div>
+
+    <div class="links">
+      <a class="btn" href="confidentialite.html">Politique de confidentialité</a>
+      <a class="btn ghost" href="cgu.html">Conditions d'utilisation</a>
+    </div>
+
+    <footer>© 2026 Flip — Application iOS.</footer>
+  </div>
+</body>
+</html>
